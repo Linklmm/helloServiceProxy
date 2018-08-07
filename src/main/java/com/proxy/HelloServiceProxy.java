@@ -13,7 +13,7 @@ public class HelloServiceProxy implements InvocationHandler {
     * newProxyInstanc方法，就是生成一个代理对象，
     * 第一个参数是类加载器，
     * 第二个参数是真实委托对象所实现的的接口（代理对象挂在那个接口下），
-    * 第三个参数this代表当前HelloServiceProxy类，
+    * 第三个参数this代表当前HelloServiceProxy类，既代理类
     * */
     public Object bind(Object target,Class[] interfaces){
         this.target=target;
